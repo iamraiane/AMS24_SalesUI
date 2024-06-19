@@ -1,10 +1,17 @@
+
+
 <div class="container">
     <h1 class="mt-3">Cadastrar categoria</h1>
     <form (ngSubmit)="onFormSubmit()">
         <div class="mt-2">
             <div class="mt-3">
                 <label class="form-label">Descrição</label>
-                <input type="text" id="description" class="form-control" name="description0" ngModel="model.description">
+                {{model.description}}
+                <input type="text" id="description" class="form-control" name="description" ngModel="model.description">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Imagem URL</label>
+                <input type="text" id="imagemurl" class="form-control" name="imagemurl" ngModel="model.imagemurl">
             </div>
         </div>
         <div class="mt-3">
